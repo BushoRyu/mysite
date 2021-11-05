@@ -40,15 +40,13 @@ def log_check(content):#最新話かどうか判定
     file = open(logfile_name, 'r')#読み取りでファイルを開く
     if file.read() == content:
         checker = False
-        print("ng")
+        print(content+" ng")
     else:
         checker = True
         file = open(logfile_name, 'w')
         file.write(content)
-        file_no.write(file_no.read() + 1)
         file.close()   
         print(content)
-        print(file_no.read())
 
     return checker
 
