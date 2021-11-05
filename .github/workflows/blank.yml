@@ -13,7 +13,7 @@ on:
 
 jobs:
   build:
-    # Ubuntuの最新版環境内で処理を実行することを
+    # Ubuntuの最新版環境内で処理を実行すること
     runs-on: macos-latest
 
     # 実行する処理＆コマンド指定
